@@ -1,1 +1,6 @@
-# progress-bars-test
+Installation
+----------
+
+npm install
+
+gulp 
