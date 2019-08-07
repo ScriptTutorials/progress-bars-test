@@ -1,0 +1,17 @@
+{
+  "name": "progressbars-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-concat": "2.6.1",
+    "node-sass": "^4.9.3",
+    "package.json": "^2.0.1"
+  },
+  "author": "AndreyP",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

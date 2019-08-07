@@ -1,0 +1,14 @@
+<div ng-repeat="bar in bars" class="progress">
+    <div class="progress-bar" role="progressbar" ng-class="{ 'progress-bar-danger': 100*bar.value/limit > 100, 'progress-bar-info': 100*bar.value/limit <= 100 }" style="width: {{100*bar.value/limit > 100 ? 100 : 100*bar.value/limit}}%;">
+    </div>
+    <div class="progress-bar-value">{{bar.value}}%</div>
+</div>
+
+<div class="input-group">
+    <select class="form-control" ng-model="selectedBar">
+        <option ng-repeat="bar in bars" ng-value="$index">Progress {{$index+1}}</option>
+    </select>
+    <div class="input-group-btn">
+        <button ng-repeat="button in buttons" type="button" class="btn btn-default" ng-click="updateProgressbar(button.value)">{{button.value}}</button>
+    </div>
+</div>
